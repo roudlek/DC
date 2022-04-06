@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <script defer src="javascript/signup.js"></script>
+    <link rel = "icon" type = "image/png" href = "images/dc.png">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <div class="logobox">
+            <a href="home.html"><img class="logo" src="images/dc.png" alt=""></a>        </div>      
+        <nav>
+            <ul>
+                <!--class="nav item" ??? for what-->
+                <li><a href="home.html" class="nav item">Home</a></li>
+                <li><a href="contact.html" class="nav item">contact us</a></li>
+                <li><a href="signup.html" class="nav item">Sign up</a></li>
+                <li><a href="Login.html" class="nav item">Login</a></li>
+                <li><a href="galerie.html" class="nav item">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <!--
+    <header>
+        <img class="logo" src="./images/netflix.png" width="60px">
+        <nav>
+            <a class="navlink" href="#">home</a>
+            <a class="navlink" href="#">contact</a>
+            <a class="navlink" href="#">planning</a>
+        </nav>
+    </header>
+-->
+<section class="main-section">
+
+
+    <section class="log">
+
+        <form id="form" action="" method="GET">
+            <div class="box">
+                <h1 class="hh1">Sign-Up</h1>
+                <hr class="horo">
+
+                <!--
+                <input type="text" placeholder="Full name" alt="full name" name="full name" id="Full-name" spellcheck="false" pattern="^[a-zA-Z-]+\s[a-zA-Z-]+$" required>
+                -->
+                <div>
+                    <input id="nam" name="name" placeholder="Full name" type="text" spellcheck="false" pattern="^[a-zA-Z-]+\s[a-zA-Z-]+$">
+                </div>
+<!--
+                <input type="email" id="Email" placeholder="Email" alt="Email" spellcheck="false" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" >
+-->
+                <div>
+                    <input type="email" name="Email" id="email" placeholder="Email" spellcheck="false" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" >
+                </div>
+
+                <div>
+                    <input type="tel" name="Number phone" id="numberphone" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}"  placeholder="Number phone (Optional)" >
+                </div>
+            
+
+            <!--                <input type="password" id="Password" placeholder="Password" alt="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+-->
+                <div>
+                    <input id="password1" name="password1" placeholder="Password" type="password">
+                </div>
+                <div>
+                    <input id="password2" name="password2" placeholder="Reenter Password" type="password">
+                </div>
+                
+                <!--
+                <input class="login-button" type="submit" value="Login" />
+-->
+               <!-- <button type="submit">Submit</button>    -->            
+
+
+                 <button class="login-button" type="submit">Submit</button>
+                 <!-- <button class="btn" type ="submit"> </button>-->    
+
+
+
+            </div>
+        </form>
+    </section>
+    <div class="errorbox">
+        <span>Errors :</span>
+        <div id="error"></div>
+    </div>
+</section>
+    <footer>
+        <div class="footer-box">
+            <div class="part-1">
+                <div class="para-p1">
+                    <p>GET UPDATES ON FUN STUFF YOU PROBABLY WANT TO KNOW ABOUT IN YOUR INBOX.</p>
+                </div>
+                
+                <div class="sm-list">
+                    <ul>
+                        <li><a href="#"><img src="images/fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/insta.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tw.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/ytb.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div><!--
+            --><div class="part-2">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="contact.html" >Contact us</a></li>
+                    <li><a href="signup.html" >Sign up</a></li>
+                    <li><a href="Login.html" >Login</a></li>
+                    <li><a href="galerie.html" >Galerie</a></li>
+                </ul>
+            </div><!--
+            --><div class="part-3">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help & FAQ</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div><!--
+            -->
+        </div>
+    </footer>
+</body>
+</html>
