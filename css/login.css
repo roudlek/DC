@@ -1,0 +1,276 @@
+*, *::before, *::after{ 
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: #f1f1f1;
+  }
+  .logo{
+    left: 0px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    z-index: 1004;
+  }
+  @media screen and (max-width: 600px){
+    .logo{
+    display: none;
+  }
+  }
+  /*  navigation */       
+  nav{
+    position: fixed;
+    z-index: 1000;/*determines ho will show at the front if there are multiple elements in the same position*/
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  /*edit all uls that are inside a nav in the html document */
+  nav ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;/*aims at providing a more efficient way to lay out, align and distribute space among items in a container*/
+    justify-content: center;
+    align-items: center;
+  }
+  nav li{
+    margin: 0px 15px;
+  }
+  nav a{
+    text-decoration: none;/*to remove all decoration especially the underline*/
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 550px){
+    nav li{
+        margin: 0 8px;
+    }
+    nav a{
+      font-size: 15px;
+    }
+  }
+
+
+
+
+body{
+  background-color: #C84B31;
+}
+main{
+  height: 800px;
+}
+.errorbox{
+    width: 260px;
+    height: fit-content;
+    padding: 10px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+
+    
+}
+
+.log{
+    margin: auto;
+    width: 100%;
+    height: 530px;
+}
+
+.box{
+    margin: auto;
+    top: 120px;
+    position: relative;
+    width: 40%;
+    height: 450px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    max-width: 700px ;
+    min-width: 300px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+    height:fit-content;
+}
+.hh1{
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.horo{
+    position: relative;
+    width: 260px;
+    top: -10px;    
+    text-align: center;
+    display: inline-block;
+}
+
+label{
+    position: relative;
+    font-size: 30px;
+    display: block;
+    margin: auto;
+
+}
+input{
+    position: relative;
+    border:rgb(214, 214, 214) ;
+    margin: 0;
+    width: 260px;
+    background-color: rgb(214, 214, 214);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login-button{
+    font-size:20px ;
+    position: relative;
+    margin: 0;
+    margin-top: 40px;
+    width: 260px;
+    border: 0;
+    padding: 10px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    -ms-box-sizing: content-box;
+    box-sizing:content-box;
+    background-color: rgb(34, 216, 207) ;
+    border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.login-button:hover{
+    background-color:lightseagreen;
+    color: white;
+  }
+  .login-button:active {
+    background-color: lightseagreen;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+  }
+.not-registred{
+
+    margin-left:auto;
+    margin-right:auto;
+    color: grey;
+}
+.create-account{
+
+    margin-left:auto;
+    margin-right:auto;
+    font-style: italic;
+    color: lightseagreen;
+}
+.bjoj{
+    position: relative;
+    padding: 20px;
+
+}
+
+
+/* footer */
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: grey;
+}
+footer a{
+  text-decoration: none;
+  color: #000;
+}
+footer li{
+  top: 20px;
+  position: relative;
+  list-style-type: none;
+  margin: 5px 0 5px 20px;
+  
+}
+
+/*when adding a block level elements to a perfect div try giving that div overflow hidden*/
+/*or give the childs position absolute and then work on them*/
+footer div{
+  overflow: hidden;
+}
+footer div h2{
+  margin: 10px 0 10px 20px;
+  font-size: 20px;
+}
+.para-p1{
+  width: 60%;
+  height: 65%;
+  position: relative;
+top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 10px;
+  overflow: auto;
+}
+footer div p{
+  font-size: 30px;
+  margin: 0;
+}
+.footer-box{
+  position: absolute;
+  width: 95%;
+  height: 280px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color:#f1f1f1 ;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.sm-list{
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  height: 60px;
+}
+.sm-list ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+footer img{
+  width: 30px;
+  height: auto;
+  display: inline-block;
+}
+
+/*make <!----> between every div used in what you want to edit in the html page */
+/*no need for float right or left or margin: auto*/
+/* Left side*/
+.part-1{
+  position: relative;
+  width: 50%;
+  height: 280px;
+  display: inline-block;
+}
+/* middle side*/
+.part-2{
+  position: relative;
+  width: 25%;
+  height: 280px;
+  display: inline-block;
+}
+/*Right side*/
+.part-3{
+  position: relative;
+  width: 25%;
+  height: 280px;
+  display: inline-block;
+}
