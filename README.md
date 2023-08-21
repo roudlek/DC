@@ -4,49 +4,51 @@
 
 I created this website in 2020 using only HTML, CSS, and JavaScript. No frameworks were used in the development of this project.
 
-Feel free to explore the website at this link -->  [The Dreams Club Website](https://roudlek.github.io/the-Dreams-club-website/home.html)
+please read the [introduction](@introduction) carfully the purpose of the project 
+
+Feel free to explore the website at this link --> link is in the botom of readme file 
 
 This README provides an overview of the structure and elements used in the Dreams Club website HTML file.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [File Structure](#file-structure)
-- [Sections](#sections)
-- [Footer](#footer)
-
 ## Introduction
 
-This project was created as part of our learning journey and not for a real-world client. It was assigned by our teacher to help us improve our web development skills using basic tools like HTML, CSS, and JavaScript. our main challenge was to build a slider using only HTML and CSS, other challenges were included to add more features to the website. We were instructed not to rely on any pre-made frameworks during the development process.
+This project showcases a multi-page website that includes a home page, sign-up page, login page, contact us page, and a gallery section. The website was built using fundamental web technologies, such as HTML, CSS, and JavaScript. The aim aim of the project was to enhance our web development skills while working on specific challenges assigned by our teacher.
 
-The Dreams Club website is designed to showcase information about the club, including its mission, coaches, location, and contact details. The website is built using HTML and CSS, and it features a responsive design for different screen sizes.
+our main challenge was to build a slider using only HTML and CSS, other challenges were included to add more features to the website. We were instructed not to rely on any pre-made frameworks during the development process.
 
-## File Structure
+## Features:
 
-- `index.html`: The main HTML file containing the structure and content of the website.
-- `css/home.css`: The stylesheet for styling the website elements.
+Home Page: A visually appealing landing page that introduces the website's theme.
 
-## Sections
 
-### Header
+Sign-Up Page: Users can register for the website by providing necessary information. JavaScript is used to validate user inputs and ensure password matching.
 
-The header includes the logo and navigation menu links to different sections of the website.
 
-### Section 1 - Hero
+Login Page: Users can log in with their credentials. JavaScript is used to validate inputs and handle login verification.
 
-This section features a hero image and a tagline promoting the club. Users can sign up by clicking the "Sign-Up Now" button, wich redirect him to a sign-up page.
 
-### Section 2 - Coaches
+Contact Us Page: A page where users can reach out. JavaScript is used for form validation to ensure proper submission.
 
-Displays a list of coach images that link to the respective coach's information in the gallery section.
 
-### Section 3 - Map
+Gallery: A dedicated section displaying images related to coaches of the club.
 
-Shows the club's location on Google Maps and provides contact information.
+## Development Approach:
 
-### Footer
+No frameworks were utilized throughout the development process.
 
-The footer contains information, social media links, and navigation links to various sections of the website.
+
+Challenges were set by the teacher to encourage problem-solving and creativity.
+
+
+A significant challenge involved creating a slider using only HTML and CSS.
+
+
+JavaScript was employed to enhance user interactions, such as verifying passwords and validating form inputs.
+
+
+Access the Project:
+To explore the project and see me achievements, you can visit the website using the following link -->  [The Dreams Club Website](https://roudlek.github.io/the-Dreams-club-website/home.html)
+
 
 ## Credits
 
