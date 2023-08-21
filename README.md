@@ -4,7 +4,7 @@
 
 I created this website in 2020 using only HTML, CSS, and JavaScript. No frameworks were used in the development of this project.
 
-please read the [introduction](@introduction) carfully the purpose of the project 
+please read the introduction carfully the purpose of the project 
 
 Feel free to explore the website at this link --> link is in the botom of readme file 
 
