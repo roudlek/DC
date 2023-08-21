@@ -56,6 +56,6 @@ For more information, contact elidrissiabdalaziz@gmail.com
 
 ## License
 
-This code is provided under the [license name], which can be found in the [LICENSE](LICENSE) file.
+This code is provided under the [The MIT License], which can be found in the [LICENSE](LICENSE) file.
 
 
