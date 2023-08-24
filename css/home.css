@@ -7,6 +7,24 @@ html{
   box-sizing: border-box;
 }
 
+/* scroll bar */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
 /*in case i imported something, check the box sizing if it border-box its okey
 if not set that imported element to content-box */
 
@@ -54,16 +72,61 @@ nav a{
   color: #fff;
   text-transform: uppercase;
 }
-@media screen and (max-width: 550px){
-  nav li{
-      margin: 0 8px;
-  }
-  nav a{
-    font-size: 15px;
-  }
-  .section2{
-    height: auto;
-    }
+
+/* map and note section */
+.map-section{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  background-color: #C84B31;
+}
+
+.left {
+  flex: 1; /* Let the left element take up the available space */
+  width: 45%;
+  min-width: 200px; /* Set a minimum width to prevent extreme narrowing */
+  background-color: #f1f1f1;
+  margin: 30px;
+  border: 5px solid #2D4263;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.right {
+  flex: 1; /* Let the right element take up the available space */
+  width: 45%;
+  min-width: 200px; /* Set a minimum width to prevent extreme narrowing */
+  text-align: center;
+  border: 5px solid #2D4263;
+  margin: 30px;
+}
+
+.info-h2 {
+  margin: 10px;
+  font-size: 40px; /* Adjust font size */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.info-adress-p {
+  width: 100%;
+  height: auto; /* Adjust height to auto */
+  max-height: 500px; /* Set a maximum height to prevent excessive scrolling */
+  overflow: auto;
+}
+
+h3 {
+  margin: 0px 0 0 40px;
+  font-size: 24px; /* Adjust font size */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  margin: 10px 0 20px 20px; /* Adjust margin */
+  font-size: 14px; /* Adjust font size */
+  font-family: 'Courier New', Courier, monospace;
+}
+.google-map{
+  position: relative;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -246,163 +309,12 @@ z-index: 1;
 }
 
 
-
-/* slider section 
-.section3{
-  text-align: center;
-  width: 100%;
-  height: 1000px;
-  background-color: black;
-}
-.section3 h2{
-  font-size: 100px;
-  text-align: center;
-  justify-content: center;
-  padding: 30px;
-  display: inline;
-  color: white;
-}
-.slider{
-  position: relative;
-  width: 90%;
-  height: 700px;
-  margin: 30px auto 30px auto;
-  text-align: center;
-  overflow: hidden;
-  border: 20px solid grey;
-}
-input {
-  position: relative;  
-  opacity: 0;
-  margin: auto auto 100px auto;
-  cursor: pointer;
-}
-
-label {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: solid 2px whitesmoke;
-  border-radius: 50%;
-  background-color: transparent;
-  z-index: 2;
-  cursor: pointer;
-  margin: 600px auto 0 auto;
-  transition-duration: 0.4s;
-  background-color: black;
-}
-label:hover{
-  background-color: white;
-}
-
-input:checked + label{
-  background-color: white;
-}
-
-input:focus + label{
-  box-shadow: 0 0 0 2px black, 0 0 18px white;
-}
-
-.slide {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition-duration: .4s;
-  opacity: 1;
-}
-
-input:checked ~ .slide {
-  transform: translateX(100%);
-}
-
-input:checked + label + .slide {
-  transform: translateX(0);
-}
-
-.bg1{
-  background-image: url(../images/back1.jpg);
-}
-.bg2{
-  background-image: url(../images/back2.jpg);
-}
-.bg3{
-  background-image: url(../images/back3.jpg);
-}
-.bg4{
-  background-image: url(../images/back4.jpg);
-}
-.bg5{
-  background-image: url(../images/back5.jpg);
-}
-*/
-/* map */
-.map-section{
-  position: relative;
-  width:100%;
-  height: 600px;
-  background-color: #C84B31;
-  display: flex;
-}
-.left{
-  position: absolute;
-  left: 0px;
-  width: 45%;
-  height: 500px;
-  background-color: #f1f1f1;
-  margin: 30px;
-  border: 5px solid #2D4263;
-}
-.info-h2{
-  position: relative;
-  margin: 10px;
-  font-size: 80px;
-  font-family: 'Courier New', Courier, monospace;
-}
-.info-adress-p{
-  position: relative;
-  width: 100%;
-  height: 75%;
-  overflow: auto;
-}
-h3{
-  margin: 0px 0 0 40px;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-}
-p{
-  margin: 10px 0 20px 50px;
-  font-size: 15px;
-  font-family: 'Courier New', Courier, monospace;
-}
-.right{
-  margin: 30px;
-  position: absolute;
-  right: 0px;
-  width: 45%;
-  height: 500px;
-  text-align: center;
-  border: 5px solid #2D4263;
-}
-.google-map{
-  position: absolute;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-
-}
-
 /* footer */
 footer{
   width: 100%;
   height: 300px;
   background-color: #ECDBBA;
+  position: relative;
 }
 footer a{
   text-decoration: none;
@@ -490,3 +402,37 @@ footer img{
   height: 280px;
   display: inline-block;
 }
+
+/* mobile */
+@media screen and (max-width: 550px){
+  nav li{
+      margin: 0 8px;
+  }
+  nav a{
+    font-size: 15px;
+  }
+  .section2{
+    height: auto;
+  }
+  .map-section {
+    display: block;
+    height: auto;
+    background-color: #C84B31;
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .left,
+  .right {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Adjust margins for spacing */
+    border: 5px solid #2D4263;
+  }
+
+  .google-map {
+    width: 100%;
+    min-height: 400px;
+  }
+
+}
+
