@@ -4,9 +4,9 @@
 
 I created this website in 2020 using only HTML, CSS, and JavaScript. No frameworks were used in the development of this project.
 
-please read the introduction carfully the purpose of the project 
+please read the introduction carfully
 
-Feel free to explore the website at this link --> link is in the botom of readme file 
+Feel free to explore the website at the link in the bottom of this file
 
 This README provides an overview of the structure and elements used in the Dreams Club website HTML file.
 
@@ -54,7 +54,7 @@ To explore the project and see me achievements, you can visit the website using 
 
 This website template was created by Abdelaziz el idrissi based on the provided design and requirements.
 
-For more information, contact elidrissiabdalaziz@gmail.com
+For more information, contact me at: elidrissiabdalaziz@gmail.com
 
 ## License
 
