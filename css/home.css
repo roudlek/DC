@@ -25,11 +25,6 @@ html{
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
-/*in case i imported something, check the box sizing if it border-box its okey
-if not set that imported element to content-box */
-
-/* by default box sizing is set to content box that means when we give something a width or a height were not setting the size of the element, were setting the size of the content box 
-with border-box we set the size of the border box*/
 body{
   background-color: #f1f1f1;
 }
@@ -48,18 +43,18 @@ body{
 /*  navigation */       
 nav{
   position: fixed;
-  z-index: 1000;/*determines ho will show at the front if there are multiple elements in the same position*/
+  z-index: 1000;
   width: 100%;
   height: 70px;
   background-color: #000;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-/*edit all uls that are inside a nav in the html document */
+
 nav ul{
   width: 100%;
   height: 100%;
   list-style-type: none;
-  display: flex;/*aims at providing a more efficient way to lay out, align and distribute space among items in a container*/
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -67,7 +62,7 @@ nav li{
   margin: 0px 15px;
 }
 nav a{
-  text-decoration: none;/*to remove all decoration especially the underline*/
+  text-decoration: none;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -76,24 +71,24 @@ nav a{
 /* map and note section */
 .map-section{
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  flex-wrap: wrap; 
   background-color: #C84B31;
 }
 
 .left {
-  flex: 1; /* Let the left element take up the available space */
+  flex: 1; 
   width: 45%;
-  min-width: 200px; /* Set a minimum width to prevent extreme narrowing */
+  min-width: 200px; 
   background-color: #f1f1f1;
   margin: 30px;
   border: 5px solid #2D4263;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  box-sizing: border-box; 
 }
 
 .right {
-  flex: 1; /* Let the right element take up the available space */
+  flex: 1; 
   width: 45%;
-  min-width: 200px; /* Set a minimum width to prevent extreme narrowing */
+  min-width: 200px; 
   text-align: center;
   border: 5px solid #2D4263;
   margin: 30px;
@@ -101,26 +96,26 @@ nav a{
 
 .info-h2 {
   margin: 10px;
-  font-size: 40px; /* Adjust font size */
+  font-size: 40px; 
   font-family: 'Courier New', Courier, monospace;
 }
 
 .info-adress-p {
   width: 100%;
-  height: auto; /* Adjust height to auto */
-  max-height: 500px; /* Set a maximum height to prevent excessive scrolling */
+  height: auto; 
+  max-height: 500px; 
   overflow: auto;
 }
 
 h3 {
   margin: 0px 0 0 40px;
-  font-size: 24px; /* Adjust font size */
+  font-size: 24px; 
   font-family: 'Courier New', Courier, monospace;
 }
 
 p {
-  margin: 10px 0 20px 20px; /* Adjust margin */
-  font-size: 14px; /* Adjust font size */
+  margin: 10px 0 20px 20px; 
+  font-size: 14px; 
   font-family: 'Courier New', Courier, monospace;
 }
 .google-map{
@@ -136,11 +131,7 @@ p {
   width: 100%;
   height: fit-content;
   display: flex;
-  overflow: hidden;/*The overflow property controls what happens to content that is too big to fit into an area.
-  hidden makes it unseen
-  scroll scroll up and down to see the whole content
-  */
- 
+  overflow: hidden;
 }
 
 
@@ -152,15 +143,12 @@ p {
   background-image: url(../images/hero-backgroud-image.jpg);
   width: 100%;
   height: auto;
-  /*background-position*/
-
 }
 .hero-img h1{
   font-size: 120px;
   padding-top: 150px;
   padding-bottom:20px;
   margin-left: 30px ;
-  /*white-space: nowrap;no wraping */
   color: #fff;
 }
 .hero-img h2{
@@ -181,13 +169,10 @@ p {
   padding-bottom: 50px;
   white-space:normal ;
 }
-/* text align justify 	Stretches the lines so that each line has equal width (like in newspapers and magazines)*/
-
 
 /* hero buttons*/
 .btn-home{
   font-size: 20px;
-  /*text-align: center;??*/
   background-color:white;
   text-decoration: none;
   text-transform: uppercase;
@@ -208,7 +193,9 @@ p {
   margin-left: 200px;
 }
 
-/* section 3 wsection2 dyal slider */
+
+
+
 .section2{
   width: 100%;
   height: auto;
